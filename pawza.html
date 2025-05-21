@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawza - Product Portfolio</title>
+  <link rel="stylesheet" href="pawza.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Additional inline styles for cover photo */
+    .cover-section {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+      margin-bottom: 60px;
+    }
+    
+    .cover-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .cover-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 80px;
+    }
+    
+    .cover-title {
+      font-size: 64px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .cover-description {
+      font-size: 22px;
+      line-height: 1.8;
+      max-width: 600px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    
+    .cover-btn {
+      display: inline-block;
+      background-color: #e13b53;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .cover-btn:hover {
+      background-color: #c0293e;
+    }
+    
+    .external-nav a {
+      color: #e13b53;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    
+    .external-nav a:hover {
+      color: #c0293e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">Kuenza</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li class="nav-item dropdown">
+  <a href="#projects" class="nav-link">Projects <i class="fas fa-caret-down"></i></a>
+  <ul class="dropdown-menu">
+    <li><a href="./quicktix.html">Quick Tix</a></li>
+    <li><a href="./pawza.html">Pawza by Kuenza</a></li>
+    <li><a href="./bloodhub.html">BloodHub</a></li>
+  </ul>
+</li> 
+<li><a href="./index.html">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="portfolio-container">
+    <section class="cover-section" id="home">
+      <img src="./pawhomecover.png" alt="Pawza Hero Image" class="cover-photo">
+      <div class="cover-overlay">
+        <h1 class="cover-title">Pawza</h1>
+        <p class="cover-description">
+          Pawza by Kuenza is a pet food eCommerce website designed to provide convenient,
+          reliable access to quality pet food for both cat and dog owners in Bhutan.
+        </p>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="project-overview-section" id="projects">
+      <h2 class="section-title">Project Overview</h2>
+
+      <div class="overview-content">
+        <div class="overview-images">
+          <img src="./pawoverview.png" alt="Project Overview Image" class="overview-image">
+        </div>
+
+        <div class="overview-details">
+          <div class="overview-text">
+            <h3 class="subsection-title">Problem</h3>
+            <p class="description">
+              Many pet owners in Bhutan struggle to find reliable, high-quality pet food locally. Physical stores often have limited stock or lack variety, and there's no dedicated online platform that caters to both dog and cat owners in a user-friendly way.
+            </p>
+
+            <h3 class="subsection-title">Product</h3>
+            <p class="description">
+              Pawza is a specialized pet food eCommerce platform designed specifically for the Bhutanese market, offering curated, high-quality food options for both cats and dogs with detailed nutritional information and reliable delivery.
+            </p>
+
+            <h3 class="subsection-title">Goal</h3>
+            <p class="description">
+              To create a streamlined online experience that allows pet owners to quickly find, trust, and order pet food for their dogs or cats — with delivery options, clear product information, and seamless checkout.
+            </p>
+          </div>
+
+          <div class="project-meta">
+            <div class="meta-columns">
+              <div class="meta-column">
+                <h3 class="subsection-title">Project duration</h3>
+                <p class="date">01/03/2025 - 30/04/2025</p>
+              </div>
+              <div class="meta-column">
+                <h3 class="subsection-title">My Responsibility</h3>
+                <p class="responsibility-text">
+                  Conducting user research, designing wireframes, developing the app's features, testing and iterating, and implementing the final design and functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="research-section">
+      <h2 class="section-title">Research Overview</h2>
+      <p class="research-description">
+        I conducted moderated user interviews with two target users: Sonam Choki, a student and cat owner, and Tenzin Wangchuk, a working professional and dog owner. Initial assumptions were that users mainly cared about price, but our findings showed they valued product quality and ease of delivery more. We learned that pet owners are frustrated with limited availability and confusing product labels in physical stores. These insights shifted our design priorities to focus on trust, clarity, and convenience.
+      </p>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="persona-section">
+      <h2 class="section-title">User Persona</h2>
+      <div class="persona-images">
+        <img src="./pawuserpersona1.png" alt="User Persona 1" class="persona-image">
+        <img src="./pawuserpersona2.png" alt="User Persona 2" class="persona-image">
+      </div>
+    </section>
+
+    <hr class="section-divider">
+    
+    <section class="persona-section">
+      <h2 class="section-title">User Journey Map</h2>
+      <div class="persona-images">
+        <img src="./pawuserjourney1.png" alt="User Journey Map 1" class="persona-image">
+        <img src="./pawuserkourney2.png" alt="User Journey Map 2" class="persona-image">
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="wireframe-section">
+      <h2 class="section-title">Paper Wireframe</h2>
+      <div class="wireframe-images">
+        <img src="./pawpaperwireframe.png" alt="Paper Wireframe 1" class="wireframe-image">
+        <img src="./pawpaperwireframe2.png" alt="Paper Wireframe 2" class="wireframe-image">
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="low-fidelity-section">
+      <h2 class="section-title">Low Fidelity Wireframe</h2>
+      <div class="wireframe-images">
+        <img src="./pawlofi.png" alt="Low Fidelity Wireframe" class="wireframe-image">
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="usability-section">
+      <h2 class="section-title">Usability Findings</h2>
+      <p class="usability-description">
+        I conducted a moderated usability study to evaluate the user-friendliness and effectiveness of the Pawza by Kuenza eCommerce platform for ordering pet food. The study involved three participants: one cat owner and two dog owners, with varying digital experience levels. Participants were asked to complete key tasks such as browsing for pet food, reading product details, and completing the checkout process. The objective was to uncover usability pain points and understand how easily users could navigate and trust the platform.
+      </p>
+
+      <div class="findings-container">
+        <article class="finding-card">
+          <img src="./number1iconpink.png" alt="Finding Icon 1" class="finding-icon">
+          <p class="finding-text">
+            Users need a more intuitive way to filter food by pet type, breed, or age
+          </p>
+        </article>
+
+        <article class="finding-card">
+          <img src="./number2iconpink.png" alt="Finding Icon 2" class="finding-icon">
+          <p class="finding-text">
+            Product detail pages lack nutritional highlights or ingredient breakdown
+          </p>
+        </article>
+
+        <article class="finding-card">
+          <img src="./number3iconpink.png" alt="Finding Icon 3" class="finding-icon">
+          <p class="finding-text">
+            Reorder functionality was not discoverable enough
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="affinity-section">
+      <h2 class="section-title">Affinity Diagram</h2>
+      <img src="./pawaffmap.png" alt="Affinity Diagram" class="affinity-image">
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="mockups-section">
+      <h2 class="section-title">Mockups</h2>
+      <div class="mockup-labels">
+        <p class="mockup-label">Before usability study</p>
+        <p class="mockup-label">After usability study</p>
+      </div>
+
+      <div class="mockup-container">
+        <div class="mockup-column">
+          <div class="mockup-images">
+            <img src="./pawbefmockup.jpeg" alt="Mockup Before 1" class="mockup-image">
+          </div>
+        </div>
+
+        <div class="mockup-column">
+          <div class="mockup-images-after">
+            <img src="./pawafmockup.jpeg" alt="Mockup After 1" class="mockup-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="prototype-section">
+      <h2 class="section-title">High Fidelity Prototype</h2>
+      <img src="./pawhifi.png" alt="High Fidelity Prototype" class="prototype-image">
+    </section>
+     <hr class="section-divider">
+
+    <section class="prototype-section">
+      <h2 class="section-title">Site Map</h2>
+      <img src="./pawsitemap.png" alt="High Fidelity Prototype" class="prototype-image">
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="responsive-section">
+      <h2 class="section-title">Responsive Web Design</h2>
+
+      <div class="responsive-container">
+        <article class="responsive-card">
+          <h3 class="device-title">Desktop</h3>
+          <img src="./pawoverview.png" alt="Desktop Design" class="responsive-image">
+        </article>
+
+        <article class="responsive-card">
+          <h3 class="device-title">Tablet</h3>
+          <img src="./pawtab.png" alt="Tablet Design" class="responsive-image">
+        </article>
+
+        <article class="responsive-card">
+          <h3 class="device-title">Mobile</h3>
+          <div class="mobile-images">
+            <img src="./pawmobile.png" alt="Mobile Design" class="mobile-image">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="accessibility-section">
+      <h2 class="section-title">Accessibility Considerations</h2>
+
+      <div class="accessibility-container">
+        <article class="accessibility-card">
+          <img src="./number1iconpink.png" alt="Accessibility Icon 1" class="accessibility-icon">
+          <p class="accessibility-text">
+            Low-contrast elements like filter buttons and icons were difficult to identify. Increasing the contrast ratio, icon size, and adding labels (e.g., "Filter by Cat/Dog") ensures users with low vision or color blindness can effectively use all controls.
+          </p>
+        </article>
+
+        <article class="accessibility-card">
+          <img src="./number2iconpink.png" alt="Accessibility Icon 2" class="accessibility-icon">
+          <div class="accessibility-columns">
+            <p class="accessibility-text">
+              Product cards lacked alt text and descriptive labels. Ensuring all product images and buttons include meaningful alt text and ARIA labels supports users who rely on screen readers for navigation.
+            </p>
+            <p class="accessibility-text">
+              Confusion during checkout flow transitions was noted. Adding clear, sequential progress indicators (e.g., Cart &gt; Delivery &gt; Payment &gt; Confirmation) and real-time feedback (like "Order placed successfully") helps users with cognitive or memory impairments stay oriented.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="takeaway-section">
+      <h2 class="section-title">Takeaway</h2>
+      <p class="takeaway-text">
+        Impact: Pawza by Kuenza reimagines how pet owners in Bhutan access high-quality pet food, offering a seamless, trustworthy, and pet-focused eCommerce experience.<br><br>
+        By enabling busy cat and dog owners to easily browse, trust, and purchase nutrition-specific pet food, the platform fills a crucial gap in Bhutan's pet care market—one where physical stores often fall short.
+      </p>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="learned-section">
+      <h2 class="section-title">What I Learned</h2>
+      <p class="learned-text">
+        Way Forward: Designing Pawza by Kuenza helped me understand the unique challenges and emotional needs of pet owners—particularly the deep sense of care they hold for their pets' well-being. It reinforced the importance of empathetic design and local context, especially when building for a community with limited access to reliable pet care resources.<br><br>
+        Through this project, I also saw how critical clarity, trust signals, and streamlined navigation are in encouraging purchase decisions on first-time platforms.<br><br>
+        Host a design feedback session with pet owners to gain actionable insights on usability and content.<br><br>
+        Conduct a second round of usability testing to confirm that key user pain points (like limited product information or trust in delivery) are being addressed effectively.<br><br>
+        Continue iterating on the shopping experience—exploring features like subscription ordering, pet profiles for personalization, and better product comparison tools based on user feedback.
+      </p>
+    </section>
+    
+
+  </main>
+  
+  <footer id="contact">     
+    <div class="container footer-content">       
+      <h2 class="section-title reveal-title">Let's <span class="highlight">Connect</span></h2>
+      <p class="contact-text">Interested in working together or have a question?</p>
+      <div class="contact-info">
+        <a href="mailto:kuenza@example.com" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>kuenzanglhaden11@gmail.com</span>
+        </a>
+        <a href="tel:+1234567890" class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+123 456 7890</span>
+        </a>
+        <a href="#" class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Thimphu, Bhutan</span>
+        </a>
+      </div>
+      <!-- <div class="socials">         
+        <a href="#" class="social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>         
+        <a href="#" class="social-icon" aria-label="Behance">
+          <i class="fab fa-behance"></i>
+        </a>         
+        <a href="#" class="social-icon" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>       
+      </div> -->
+      <p class="copyright">© 2025 Kuenza Lhaden. All rights reserved.</p>     
+    </div>   
+  </footer>
+  <script>
+    // Page loader
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.querySelector('.loader').classList.add('fade-out');
+        setTimeout(() => {
+          document.querySelector('.loader').style.display = 'none';
+        }, 500);
+      }, 800);
+    });
+    
+    // Scroll animations
+    document.addEventListener('DOMContentLoaded', () => {
+      // Intersection Observer for fade-in elements
+      const fadeElements = document.querySelectorAll('.fade-in, .slide-up, .reveal-content, .reveal-title');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+      
+      fadeElements.forEach(element => {
+        observer.observe(element);
+      });
+      
+      // Active navigation link
+      const sections = document.querySelectorAll('section, footer');
+      const navItems = document.querySelectorAll('.nav-item');
+      
+      window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          
+          if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('href').substring(1) === current) {
+            item.classList.add('active');
+          }
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a.scroll-btn').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

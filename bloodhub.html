@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloodhub - Product Portfolio</title>
+  <link rel="stylesheet" href="pawza.css">
+  <link rel="stylesheet" href="style.css">
+  <script href="./bloodhub.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Additional inline styles for cover photo */
+    .cover-section {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+      margin-bottom: 60px;
+    }
+    
+    .cover-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .cover-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 80px;
+    }
+    
+    .cover-title {
+      font-size: 64px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .cover-description {
+      font-size: 22px;
+      line-height: 1.8;
+      max-width: 600px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    
+    .cover-btn {
+      display: inline-block;
+      background-color: #e13b53;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .cover-btn:hover {
+      background-color: #c0293e;
+    }
+    
+    .external-nav a {
+      color: #e13b53;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    
+    .external-nav a:hover {
+      color: #c0293e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">Kuenza</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li class="nav-item dropdown">
+  <a href="#projects" class="nav-link">Projects <i class="fas fa-caret-down"></i></a>
+  <ul class="dropdown-menu">
+    <li><a href="./quicktix.html">Quick Tix</a></li>
+    <li><a href="./pawza.html">Pawza by Kuenza</a></li>
+    <li><a href="./bloodhub.html">BloodHub</a></li>
+  </ul>
+</li> 
+<li><a href="./index.html">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="portfolio-container">
+    <section class="cover-section" id="home">
+      <img src="./blood-cells 1.png" alt="Pawza Hero Image" class="cover-photo">
+      <div class="cover-overlay">
+        <h1 class="cover-title">BloodHub</h1>
+        <p class="cover-description">
+          BloodHub is an innovative web platform designed to bridge the gap between blood donors and recipients—be it individuals, hospitals, or emergency services. 
+        </p>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="project-overview-section" id="projects">
+      <h2 class="section-title">Project Overview</h2>
+
+      <div class="overview-content">
+        <div class="overview-images">
+          <img src="./bloodhuboverview.png" alt="Project Overview Image" class="overview-image">
+        </div>
+
+        <div class="overview-details">
+          <div class="overview-text">
+            <h3 class="subsection-title">Problem</h3>
+            <p class="description">
+              Access to blood in critical moments is often delayed due to a lack of centralized systems, inefficient communication between donors and seekers, and limited public awareness about the importance and ease of blood donation.
+
+            </p>
+
+            <h3 class="subsection-title">Product</h3>
+            <p class="description">
+              The platform enables users to donate blood, seek blood, and track requests in real-time, creating a life-saving network that is accessible and efficient. BloodHub ensures that no request goes unanswered in times of critical need. By fostering a digital community of responsible donors and healthcare responders, BloodHub simplifies the donation process, encourages regular giving, and strengthens emergency response systems.
+            </p>
+
+            <h3 class="subsection-title">Goal</h3>
+            <p class="description">
+              To build a fast, accessible, and trustworthy network that bridges the gap between blood donors and those in need, ensuring timely and life-saving blood transfusions across communities.
+
+            </p>
+          </div>
+
+          <div class="project-meta">
+            <div class="meta-columns">
+              <div class="meta-column">
+                <h3 class="subsection-title">Project duration</h3>
+                <p class="date">01/03/2025 - 30/04/2025</p>
+              </div>
+              <div class="meta-column">
+                <h3 class="subsection-title">My Responsibility</h3>
+                <p class="responsibility-text">
+                  Conducting user research, designing wireframes, developing the app's features, testing and iterating, and implementing the final design and functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="research-section">
+      <h2 class="section-title">Research Overview</h2>
+      <p class="research-description">
+       I conducted moderated user interviews with two target users: Kinley Choko, a college student who urgently needed blood for a family member but struggled to find a donor, and Kinley Tshring, a working professional eager to donate blood but unsure where or how to begin. Our initial assumption was that users mainly needed a platform for registration and logistics, but the study revealed deeper emotional and usability barriers. Kinley Choko shared frustration with the lack of real-time donor availability, confusing channels for making a request, and the stress of navigating through unverified contacts during emergencies. On the other hand, Kinley Tshring expressed a strong willingness to help but had never donated because he didn’t know where to register or how to receive alerts about nearby blood needs. These insights led us to shift our design focus toward building user trust, providing real-time matching and clear calls-to-action, and simplifying access to donor and request workflows—especially on mobile devices, where most users turn during emergencies.
+
+      </p>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="persona-section">
+      <h2 class="section-title">User Persona</h2>
+      <div class="persona-images">
+        <img src="./bloodhubpersona1.png" alt="User Persona 1" class="persona-image">
+        <img src="./bloodhubpersona2.png" alt="User Persona 2" class="persona-image">
+      </div>
+    </section>
+
+    
+
+    <hr class="section-divider">
+
+    <section class="wireframe-section">
+      <h2 class="section-title">Paper Wireframe</h2>
+      <div class="wireframe-images">
+        <img src="./bloodhubpaperwireframe.jpeg" alt="Paper Wireframe 1" class="wireframe-image">
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="low-fidelity-section">
+      <h2 class="section-title">Low Fidelity Wireframe</h2>
+      <div class="wireframe-images">
+        <img src="./bloodhublofi.png" alt="Low Fidelity Wireframe" class="wireframe-image">
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="usability-section">
+      <h2 class="section-title">Usability Findings</h2>
+      <p class="usability-description">
+        I conducted a moderated usability study to evaluate the effectiveness and user experience of the BloodHub platform, which connects blood donors and seekers. The study involved two participants with real-world experience related to blood donation—one who needed blood in an emergency, and another who wanted to donate but lacked access to information. Participants were asked to walk through core tasks such as requesting blood, signing up to donate, and exploring available matches. The goal was to identify pain points and understand how users interact with the platform under real-life conditions.
+
+      </p>
+
+      <div class="findings-container">
+        <article class="finding-card">
+          <img src="./number1iconpink.png" alt="Finding Icon 1" class="finding-icon">
+          <p class="finding-text">
+          Users need a simpler, more visible way to request or offer blood—especially under urgent conditions.
+
+          </p>
+        </article>
+
+        <article class="finding-card">
+          <img src="./number2iconpink.png" alt="Finding Icon 2" class="finding-icon">
+          <p class="finding-text">
+            There is a lack of real-time location-based donor matching, which makes the platform feel disconnected and slow to respond.
+
+          </p>
+        </article>
+
+        <article class="finding-card">
+          <img src="./number3iconpink.png" alt="Finding Icon 3" class="finding-icon">
+          <p class="finding-text">
+The mobile navigation experience is unintuitive and overwhelming during emergency situations, especially for first-time users.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="affinity-section">
+      <h2 class="section-title">Affinity Diagram</h2>
+      <img src="./bloodhubaffmap.png" alt="Affinity Diagram" class="affinity-image">
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="mockups-section">
+      <h2 class="section-title">Mockups</h2>
+      <div class="mockup-labels">
+        <p class="mockup-label">Before usability study</p>
+        <p class="mockup-label">After usability study</p>
+      </div>
+
+      <div class="mockup-container">
+        <div class="mockup-column">
+          <div class="mockup-images">
+            <img src="./bloodhubbefmockup.png" alt="Mockup Before 1" class="mockup-image">
+          </div>
+        </div>
+
+        <div class="mockup-column">
+          <div class="mockup-images-after">
+            <img src="./bloodhubafmockup.png" alt="Mockup After 1" class="mockup-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="prototype-section">
+      <h2 class="section-title">High Fidelity Prototype</h2>
+      <img src="./bloodhubhifi.png" alt="High Fidelity Prototype" class="prototype-image">
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="accessibility-section">
+      <h2 class="section-title">Accessibility Considerations</h2>
+
+      <div class="accessibility-container">
+        <article class="accessibility-card">
+          <img src="./number1iconpink.png" alt="Accessibility Icon 1" class="accessibility-icon">
+          <p class="accessibility-text">
+            Ensure that all text, buttons, and alerts have sufficient color contrast against their backgrounds to be readable for users with low vision or color blindness. Use headings, spacing, and bold styling to guide users through tasks, especially in urgent scenarios.
+
+          </p>
+        </article>
+
+        <article class="accessibility-card">
+          <img src="./number2iconpink.png" alt="Accessibility Icon 2" class="accessibility-icon">
+          <div class="accessibility-columns">
+            <p class="accessibility-text">
+              Design all interactive elements (forms, buttons, navigation) to be fully operable using a keyboard and compatible with screen readers, so users with motor impairments or visual disabilities can easily request or offer blood.
+
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="takeaway-section">
+      <h2 class="section-title">Takeaway</h2>
+      <p class="takeaway-text">
+        Impact: BloodHub redefines how individuals in Bhutan connect during life-saving moments—making blood donation and access faster, clearer, and more human-centered.
+
+By bridging the communication gap between willing donors and those urgently seeking blood, the platform addresses a critical flaw in the current system: lack of centralized access, trust, and real-time responsiveness during emergencies.
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="learned-section">
+      <h2 class="section-title">What I Learned</h2>
+      <p class="learned-text">
+       Way Forward: Designing BloodHub helped me deeply understand the urgency, emotional stress, and uncertainty that both blood seekers and donors experience. It taught me that trust, speed, and clarity aren't just design goals—they are potentially life-saving features in this context.
+
+Through this project, I also recognized how crucial it is to design for accessibility, mobile-first use, and clear user flows—especially in emergency health scenarios. I learned the value of direct, empathetic communication in UI design, and the importance of reducing friction in every interaction.
+
+Host a design feedback session with both blood seekers and regular donors to validate ease-of-use and emotional tone.
+
+Conduct a second round of usability testing focused on mobile accessibility and emergency-time performance.
+
+Continue iterating on features like real-time donor matching, confirmation notifications, and trust signals (e.g., verified donor badges, hospital integrations).
+      </p>
+    </section>
+    
+
+  </main>
+  
+  <footer id="contact">     
+    <div class="container footer-content">       
+      <h2 class="section-title reveal-title">Let's <span class="highlight">Connect</span></h2>
+      <p class="contact-text">Interested in working together or have a question?</p>
+      <div class="contact-info">
+        <a href="mailto:kuenza@example.com" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>kuenzanglhaden11@gmail.com</span>
+        </a>
+        <a href="tel:+1234567890" class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+123 456 7890</span>
+        </a>
+        <a href="#" class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Thimphu, Bhutan</span>
+        </a>
+      </div>
+      <!-- <div class="socials">         
+        <a href="#" class="social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>         
+        <a href="#" class="social-icon" aria-label="Behance">
+          <i class="fab fa-behance"></i>
+        </a>         
+        <a href="#" class="social-icon" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>       
+      </div> -->
+      <p class="copyright">© 2025 Kuenza Lhaden. All rights reserved.</p>     
+    </div>   
+  </footer>
+  <script>
+    // Page loader
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.querySelector('.loader').classList.add('fade-out');
+        setTimeout(() => {
+          document.querySelector('.loader').style.display = 'none';
+        }, 500);
+      }, 800);
+    });
+    
+    // Scroll animations
+    document.addEventListener('DOMContentLoaded', () => {
+      // Intersection Observer for fade-in elements
+      const fadeElements = document.querySelectorAll('.fade-in, .slide-up, .reveal-content, .reveal-title');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+      
+      fadeElements.forEach(element => {
+        observer.observe(element);
+      });
+      
+      // Active navigation link
+      const sections = document.querySelectorAll('section, footer');
+      const navItems = document.querySelectorAll('.nav-item');
+      
+      window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          
+          if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('href').substring(1) === current) {
+            item.classList.add('active');
+          }
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a.scroll-btn').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
